@@ -1,0 +1,203 @@
+/* 
+________ МЕДИЯ ЗАПРОСЫ ДЛЯ СЛАЙДЕРА НА ГЛАВНОЙ СТРАНИЦЕ ________ 
+МЕДИА ЗАПРОСЫ ДЛЯ ЦЕНТРАЛЬНОГО БЛОКА С ЗАГОЛОВКОМ, ОПИСАНИЕМ, КНОПКОЙ
+---------- НАЧАЛО ----------
+*/
+@media (min-width: 900px){
+  .cd-slider > li > div {
+    width: 600px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -300px;
+    padding: 20px;
+  }
+  .cd-slider > li h2, .cd-slider > li p {
+    
+  }
+  .cd-slider > li h2 {
+    font-size: 2.4em;
+    font-weight: 300;
+  }
+  .cd-slider > li p {
+    margin-top: 20px;
+    font-size: 1.4em;
+    line-height: 1.4;
+  }
+  .cd-slider > li .cd-btn {
+    width: 200px;
+    font-size: 1.4em;
+    font-weight: 600;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 20px;
+    padding: 1.2em 0;
+    margin-top: .8em;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 899px) {
+  .cd-slider > li > div {
+    width: 400px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -200px;
+    padding: 10px;
+  }
+  .cd-slider > li h2, .cd-slider > li p {
+    
+  }
+  .cd-slider > li h2 {
+    font-size: 1.6em;
+    font-weight: 300;
+  }
+  .cd-slider > li p {
+    margin-top: 20px;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  .cd-slider > li .cd-btn {
+    width: 200px;
+    font-size: 1em;
+    font-weight: 600;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 10px;
+    padding: 1.2em 0;
+    margin-top: .8em;
+  }
+}
+
+@media (max-width: 499px){
+  .cd-slider > li > div {
+    width: 100%;
+    height: 150px;
+    top: 50%;
+    left: 0;
+    margin-top: -75px;
+    padding: 5px;
+  }
+  .cd-slider > li h2, .cd-slider > li p {
+    
+  }
+  .cd-slider > li h2 {
+    font-size: 1.2em;
+    font-weight: 300;
+  }
+  .cd-slider > li p {
+    margin-top: 10px;
+    font-size: 0.8em;
+    line-height: 1.4;
+  }
+  .cd-slider > li .cd-btn {
+    width: 120px;
+    height: 40px;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-left: -60px;
+    bottom: 5px;
+    padding: 1em 0;
+    margin-top: .8em;
+  }
+}
+/*
+________ МЕДИА ЗАПРОСЫ ДЛЯ ЦЕНТРАЛЬНОГО БЛОКА С ЗАГОЛОВКОМ, ОПИСАНИЕМ, КНОПКОЙ ________
+---------- КОНЕЦ ----------
+*/
+
+/* 
+________ МЕДИЯ ЗАПРОСЫ ДЛЯ БЛОКА-НОВОСТЕЙ НА ГЛАВНОЙ СТРАНИЦЕ ________ 
+---------- НАЧАЛО ----------
+*/
+@media (min-width: 600px) and (max-width: 767px) {
+	.col-xs-12 {
+		width: 100%;
+	}
+  .col-xs-12-small {
+    width: 50%;
+  }
+}
+
+@media (min-width: 590px) and (max-width: 991px) {
+  .col-sm-6-new{
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 991px) {
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .hidden-md {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 991px) {
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .hidden-md {
+    display: none;
+  }
+}
+
+/*
+---------- КОНЕЦ ----------
+________ МЕДИЯ ЗАПРОСЫ ДЛЯ БЛОКА-НОВОСТЕЙ НА ГЛАВНОЙ СТРАНИЦЕ ________ 
+*/
+
+/* 
+________ МЕДИЯ ЗАПРОСЫ ДЛЯ БЛОКА-СТУДЕНТЫ НА ГЛАВНОЙ СТРАНИЦЕ ________ 
+---------- НАЧАЛО ----------
+*/
+
+@media (min-width: 784px) and (max-width: 888px){
+  .grid figure h2 {
+    font-size: 1em;
+  }
+  .grid figure p {
+  font-size: 0.7em;
+  }
+}
+@media (min-width: 680px) and (max-width: 783px){
+  .grid figure h2 {
+    font-size: 0.9em;
+  }
+  .grid figure p {
+  font-size: 0.6em;
+  }
+}
+@media (min-width: 465px) and (max-width: 679px){
+  .col-sm-6 {
+    width: 100%;
+  }
+  .grid figure {
+    width: 400px;
+    margin: auto;
+  }
+}
+@media (max-width: 464px){
+  .col-sm-6 {
+    width: 100%;
+  }
+  .grid figure {
+    width: 100%;
+    min-width: 280px;
+  }
+  .grid figure h2 {
+    font-size: 0.7em;
+  }
+  .grid figure p {
+  font-size: 0.6em;
+  }
+}
+
+/* 
+---------- КОНЕЦ ----------
+________ МЕДИЯ ЗАПРОСЫ ДЛЯ БЛОКА-СТУДЕНТЫ НА ГЛАВНОЙ СТРАНИЦЕ ________ 
+
+*/

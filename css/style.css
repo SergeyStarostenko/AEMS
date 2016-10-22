@@ -1,0 +1,730 @@
+
+/*
+------- классы с цветами для стандартизации -------
+____________________ НАЧАЛО ____________________
+dark - темный
+light - светлый
+*/
+
+.red_light_c { color: #e74c3c; } 
+.red_dark_c { color: #c0392b; }
+.green_light_c { color: #0aa06e; }
+.blue_light_c { color: #3498db; }
+
+.red_light_bg { background-color: #e74c3c; }
+.red_dark_bg { background-color: #c0392b; }
+.green_light_bg { background-color: #0aa06e; }
+.blue_light_bg { background-color: #3498db; }
+
+/*
+____________________ КОНЕЦ ____________________
+------- классы с цветами для стандартизации -------
+*/
+
+.header {
+	width: 100%;
+	height: 100%;
+}
+
+/* -------------------------------- 
+Primary style
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+}
+
+body {
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row_new{
+  height: 50px;
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-family: "KelsonSansRegular";
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, .3);
+      -webkit-transition: background-color 0.5s;
+      -moz-transition: background-color 0.5s;
+      -o-transition: background-color 0.5s;
+      transition: background-color 0.5s;
+}
+
+.nav:hover {
+  background-color: rgba(0, 0, 0, 1);
+      -webkit-transition: background-color 0.8s;
+      -moz-transition: background-color 0.8s;
+      -o-transition: background-color 0.8s;
+      transition: background-color 0.8s;
+}
+
+.glyphicon {
+  top: -2px;
+}
+
+.navbar-inverse .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+}
+
+.navbar-inverse .navbar-nav > li:hover,
+.navbar-default .navbar-nav > li:hover{
+    background-color: #fff;
+        -webkit-transition: background-color 0.5s;
+        -moz-transition: background-color 0.5s;
+        -o-transition: background-color 0.5s;
+        transition: background-color 0.5s;
+}
+
+.navbar-inverse .navbar-nav > li:hover > a,
+.navbar-default .navbar-nav > li:hover > a{
+    color: #000;
+        -webkit-transition: color 0.5s;
+        -moz-transition: color 0.5s;
+        -o-transition: color 0.5s;
+        transition: color 0.5s;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border: none;
+}
+
+.navbar-default {
+    background-color: rgba(0, 0, 0, .0);
+    border: none;
+}
+.navbar {
+    border: none;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.navbar-inverse .navbar-toggle {
+    border: none;
+}
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-toggle {
+  border-radius: none;
+}
+
+/* -------------------------------- 
+
+Slider
+
+-------------------------------- */
+.cd-slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* hide horizontal scrollbar on IE11 */
+  overflow: hidden;
+}
+.cd-slider-wrapper .cd-slider, .cd-slider-wrapper .cd-slider > li {
+  height: 100%;
+  width: 100%;
+}
+
+.cd-slider > li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  /* used to vertically center its content */
+  display: table;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cd-slider > li.visible {
+  /* selected slide */
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+}
+.cd-slider > li:first-of-type {
+  background-image: url(../img/sl_img_4.jpg);
+}
+.cd-slider > li:nth-of-type(2) {
+  background-image: url(../img/sl_img_5.jpg);
+}
+.cd-slider > li:nth-of-type(3) {
+  background-image: url(../img/sl_img_7.jpg);
+}
+.cd-slider > li:nth-of-type(4) {
+  background-image: url(../img/sl_img_10.jpg);
+}
+.cd-slider > li:nth-of-type(5) {
+  background-image: url(../img/sl_img_6.jpg);
+}
+.cd-slider > li:first-of-type, .cd-slider > li:nth-of-type(2), .cd-slider > li:nth-of-type(3), .cd-slider > li:nth-of-type(4), .cd-slider > li:nth-of-type(5) {
+  background-size: cover;
+}
+/* Блок с Заголовком, Описанием и Кнопкой */
+.cd-slider > li > div {
+  position: absolute;
+  display: block;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .7);
+}
+.cd-slider > li h2, .cd-slider > li p {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  line-height: 1.2;
+  margin: auto;
+  color: #ffffff;
+}
+.cd-slider > li h2 {
+    font-family: "KelsonSansRegular";
+    text-transform: uppercase;
+    font-size: 2em;
+}
+.cd-slider > li p {
+    font-family: "ClearSansLight";
+    font-size: 1.4em;
+    line-height: 1.4;
+}
+.cd-slider > li .cd-btn {
+    font-family: "OpenSansCondensedBold";
+    position: absolute;
+    display: inline-block;
+    background-color: #e74c3c;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+        -webkit-transition: background-color 0.2s;
+        -moz-transition: background-color 0.2s;
+        -o-transition: background-color 0.2s;
+        transition: background-color 0.2s;
+}
+.cd-slider > li .cd-btn:hover {
+    text-decoration: none;
+    background-color: #0aa06e;
+        -webkit-transition: background-color 0.2s;
+        -moz-transition: background-color 0.2s;
+        -o-transition: background-color 0.2s;
+        transition: background-color 0.2s;
+}
+/*.no-touch .cd-slider > li .cd-btn:hover {
+  background-color: #0aa06e;
+}*/
+
+/* -------------------------------- 
+Slider navigation
+-------------------------------- */
+.cd-slider-navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 3;
+  text-align: center;
+  width: 90%;
+}
+.cd-slider-navigation::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.cd-slider-navigation li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.cd-slider-navigation li:last-of-type {
+  margin-right: 0;
+}
+.cd-slider-navigation a {
+  display: block;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+/* Реакция при наведении на иконки навигации */
+.cd-slider-navigation li a:hover{
+  background-color: #0aa06e;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+.no-touch .cd-slider-navigation a:hover em {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: opacity 0.2s 0s, visibility 0s 0s, -webkit-transform 0.2s 0s;
+  -moz-transition: opacity 0.2s 0s, visibility 0s 0s, -moz-transform 0.2s 0s;
+  transition: opacity 0.2s 0s, visibility 0s 0s, transform 0.2s 0s;
+}
+.cd-slider-navigation li.selected:first-of-type a {
+  /* Изменяю цвет активной кнопки */
+  background-color: #e74c3c;
+}
+.cd-slider-navigation li.selected:nth-of-type(2) a {
+  background-color: #e74c3c;
+}
+.cd-slider-navigation li.selected:nth-of-type(3) a {
+  background-color: #e74c3c;
+}
+.cd-slider-navigation li.selected:nth-of-type(4) a {
+  background-color: #e74c3c;
+}
+.cd-slider-navigation li.selected:nth-of-type(5) a {
+  background-color: #e74c3c;
+}
+.cd-slider-navigation em {
+  /* tooltip visible on hover */
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  padding: 8px 10px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+  font-size: 1.3rem;
+  border-radius: 2px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateX(-50%) translateY(3px);
+  -moz-transform: translateX(-50%) translateY(3px);
+  -ms-transform: translateX(-50%) translateY(3px);
+  -o-transform: translateX(-50%) translateY(3px);
+  transform: translateX(-50%) translateY(3px);
+  -webkit-transition: opacity 0.2s 0s, visibility 0s 0.2s, -webkit-transform 0.2s 0s;
+  -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s, -moz-transform 0.2s 0s;
+  -o-transition: opacity 0.2s 0s, visibility 0s 0.2s, transform 0.2s 0s;
+  transition: opacity 0.2s 0s, visibility 0s 0.2s, transform 0.2s 0s;
+}
+.cd-slider-navigation em::after {
+  /* tooltip arrow */
+  content: '';
+  position: absolute;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -10px;
+  height: 0;
+  width: 0;
+  border: 5px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.7);
+}
+@media only screen and (max-width: 700px) {
+  .cd-slider-navigation a {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+/* -------------------------------- 
+
+svg cover layer
+
+-------------------------------- */
+.cd-svg-cover {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.cd-svg-cover path {
+  fill: #e74c3c;
+}
+.cd-svg-cover.is-animating {
+  z-index: 4;
+  opacity: 1;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.news {
+    font-family: "KelsonSansRegular";
+    margin-bottom: 20px;
+    padding-top: 10px;
+    /*OpenSansCondensedLight - */
+}
+.news_title, .students_title {
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #444;
+    font-family: "KelsonSansRegular";
+}
+
+.students_title {
+  margin-bottom: 10px;
+}
+
+.news_title h1 a {
+  text-decoration: none;
+  color: #444;
+}
+
+.news_title h1 a:hover {
+  color: #0aa06e;
+}
+
+.news_title h1, .students_title h1 {
+    font-size: 35px;
+}
+
+.news_title span, .students_title span{
+    width: 240px;
+    height: 3px;
+    margin: auto;
+    margin-top: 5px;
+    /*background-color: #c0392b;*/
+    display: block;
+}
+.news_title span {
+  background-color: #0aa06e;
+}
+.students_title span {
+  background-color: #3498db;
+}
+
+.block_news {
+    min-width: 270px;
+    height: 260px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.block_news_top {
+    position: relative;
+    height: 66px;
+}
+
+.block_news_top img {
+    float: left;
+}
+
+.block_news_top_day {
+    position: absolute;
+    left: 12px;
+    top: 21px;
+    font-size: 32px;
+    font-family: "Arial";
+    font-weight: 700;
+    color: #2f423f;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.block_news_top ul{
+    float: left;
+    padding: 0 10px 0 10px;
+    list-style: none;
+    position: relative;
+}
+
+.block_news_top ul li{
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.block_news_top ul li h4{
+    max-width: 190px;
+    font-size: 16px;
+    /*font-size: 18px; - OpenSansCondensedLight*/
+    color: #c0392b;
+    margin-top: 2px;
+    line-height: 20px;
+    /*              !!! ВАЖНО!!!!!!
+    В случаи не читабельного слова из-за неправильного 
+    отображения переноса следует использовать спецсимвол -> &shy; <- в HTML
+    следовательно для создания динамическкой страницы на PHP этот спецсимвол 
+    необходимо записывать в код PHP
+    */
+    overflow-wrap: break-word;  /* не поддерживает IE, Firefox; является копией word-wrap */ 
+    word-wrap: break-word;
+    word-break: break-all;
+    -webkit-hyphens: auto; 
+    -ms-hyphens: auto; 
+    hyphens: auto; 
+}
+
+.block_news_top_date {
+    position: absolute;
+    top: 49px;
+    font-size: 12px;
+}
+
+.block_news_text {
+    margin: 5px 0;
+    max-height: 100px;
+    font-family: "ClearSansLight";
+    color: #444;
+    text-shadow: 1px 1px rgba(235, 235, 235, 0.3);
+    -webkit-hyphens: auto; 
+    -ms-hyphens: auto; 
+    hyphens: auto;
+}
+
+.block_news_text_tegs {
+  font-size: 0.7em;
+  color: #0aa06e;
+  font-family: "KelsonSansRegular";
+  position: absolute;
+  bottom: 52px;
+  text-decoration: none;
+}
+
+.block_news_text_tegs a {
+  color: #888;
+}
+
+.block_news_text_tegs a:hover {
+  text-decoration: none;
+  color: #e74c3c;
+}
+
+.block_news_bottom a button {
+    position: absolute;
+    bottom: 0;
+    width: 135px;
+    height: 40px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0aa06e;
+    font-family: "OpenSansCondensedBold";
+        -webkit-transition: background-color 0.2s;
+        -moz-transition: background-color 0.2s;
+        -o-transition: background-color 0.2s;
+        transition: background-color 0.2s
+}
+
+.block_news_bottom a button:hover {
+    background-color: #e74c3c;
+        -webkit-transition: background-color 0.2s;
+        -moz-transition: background-color 0.2s;
+        -o-transition: background-color 0.2s;
+        transition: background-color 0.2s
+}
+
+.block_news_bottom a button span {
+    left: 10px;
+}
+
+.students_container {
+  text-align: center;
+  padding: 15px;
+  font-family: "KelsonSansRegular";
+}
+.students_container_img {
+  background-color: #000;
+}
+/* Common style */
+.grid figure {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  cursor: pointer;
+}
+.bg_img_1, 
+.bg_img_2, 
+.bg_img_3, 
+.bg_img_4, 
+.bg_img_5, 
+.bg_img_6 {
+  background-position: center;
+  background-size: cover;
+}
+.bg_img_1 {
+  background-image: url(../img/img001.jpg);
+}
+.bg_img_2 {
+  background-image: url(../img/img002.jpg);
+}
+.bg_img_3 {
+  background-image: url(../img/img005.jpg);
+}
+.bg_img_4 {
+  background-image: url(../img/img004.jpg);
+}
+.bg_img_5 {
+  background-image: url(../img/img001.jpg);
+}
+.bg_img_6 {
+  background-image: url(../img/img002.jpg);
+}
+
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.grid figure h2 {
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+}
+
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 0.8em;
+}
+
+/*---------------*/
+/***** Marley *****/
+/*---------------*/
+
+figure.effect-marley figcaption {
+  text-align: right;
+}
+
+figure.effect-marley h2,
+figure.effect-marley p {
+  position: absolute;
+  right: 20px;
+  left: 20px;
+  padding: 10px 0;
+}
+
+
+figure.effect-marley p {
+  bottom: 30px;
+  line-height: 1.5;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+  background-color: #3498db;
+  padding-right: 10px;
+  padding-left: 10px;
+    /*              !!! ВАЖНО!!!!!!
+    В случаи не читабельного слова из-за неправильного 
+    отображения переноса следует использовать спецсимвол -> &shy; <- в HTML
+    следовательно для создания динамическкой страницы на PHP этот спецсимвол 
+    необходимо записывать в код PHP
+    */
+    overflow-wrap: break-word;  /* не поддерживает IE, Firefox; является копией word-wrap */ 
+    word-wrap: break-word;
+    word-break: break-all;
+    -webkit-hyphens: auto; 
+    -ms-hyphens: auto; 
+    hyphens: auto; 
+}
+
+figure.effect-marley h2 {
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0,65px,0);
+  transform: translate3d(0,65px,0);
+  text-align: center;
+  line-height: 1.2;
+}
+
+figure.effect-marley:hover h2 {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-marley h2::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  content: '';
+  -webkit-transform: translate3d(0,40px,0);
+  transform: translate3d(0,40px,0);
+}
+
+figure.effect-marley h2::after,
+figure.effect-marley p {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-marley:hover h2::after,
+figure.effect-marley:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
