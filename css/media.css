@@ -74,10 +74,10 @@ ________ МЕДИЯ ЗАПРОСЫ ДЛЯ СЛАЙДЕРА НА ГЛАВНОЙ �
 @media (max-width: 499px){
   .cd-slider > li > div {
     width: 100%;
-    height: 150px;
+    height: 200px;
     top: 50%;
     left: 0;
-    margin-top: -75px;
+    margin-top: -100px;
     padding: 5px;
   }
   .cd-slider > li h2, .cd-slider > li p {
@@ -98,8 +98,9 @@ ________ МЕДИЯ ЗАПРОСЫ ДЛЯ СЛАЙДЕРА НА ГЛАВНОЙ �
     font-size: 0.8em;
     font-weight: 600;
     margin-left: -60px;
+    border: 2px solid #e74c3c;
     bottom: 5px;
-    padding: 1em 0;
+    padding: 0.75em 0;
     margin-top: .8em;
   }
 }
@@ -113,9 +114,9 @@ ________ МЕДИЯ ЗАПРОСЫ ДЛЯ БЛОКА-НОВОСТЕЙ НА ГЛ�
 ---------- НАЧАЛО ----------
 */
 @media (min-width: 600px) and (max-width: 767px) {
-	.col-xs-12 {
-		width: 100%;
-	}
+  .col-xs-12 {
+    width: 100%;
+  }
   .col-xs-12-small {
     width: 50%;
   }
