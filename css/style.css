@@ -1,3 +1,4 @@
+/*____________________ V-2.2 ____________________*/
 
 /*
 ------- классы с цветами для стандартизации -------
@@ -33,21 +34,15 @@ Primary style
   box-sizing: border-box;
 }
 
-html {
-}
-
 body {
   background-color: #ffffff;
 }
-
 a {
   text-decoration: none;
 }
-
 .row {
   width: 100%;
 }
-
 .nav {
   width: 100%;
   height: 50px;
@@ -65,7 +60,6 @@ a {
       -o-transition: background-color 0.5s;
       transition: background-color 0.5s;
 }
-
 .nav:hover {
   background-color: rgba(0, 0, 0, 1);
       -webkit-transition: background-color 0.8s;
@@ -73,8 +67,6 @@ a {
       -o-transition: background-color 0.8s;
       transition: background-color 0.8s;
 }
-
-
 .navbar-inverse .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a {
     color: #fff;
@@ -83,7 +75,6 @@ a {
         -o-transition: all 0.5s;
         transition: all 0.5s;
 }
-
 .navbar-inverse .navbar-nav > li:hover,
 .navbar-default .navbar-nav > li:hover{
     background-color: #fff;
@@ -92,7 +83,6 @@ a {
         -o-transition: background-color 0.5s;
         transition: background-color 0.5s;
 }
-
 .navbar-inverse .navbar-nav > li:hover > a,
 .navbar-default .navbar-nav > li:hover > a{
     color: #000;
@@ -101,30 +91,25 @@ a {
         -o-transition: color 0.5s;
         transition: color 0.5s;
 }
-
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     border: none;
 }
-
 .navbar-default {
     background-color: rgba(0, 0, 0, .0);
     border: none;
 }
-
 .navbar {
     position: relative;
     min-height: 50px;
     margin-bottom: 20px;
     border: none;
 }
-
 .navbar-inverse .navbar-toggle {
     border: none;
 }
 .navbar-default .navbar-toggle {
     border: none;
 }
-
 .navbar-toggle {
   border-radius: none;
 }
@@ -145,7 +130,6 @@ Slider
   height: 100%;
   width: 100%;
 }
-
 .cd-slider > li {
   position: absolute;
   top: 0;
@@ -379,7 +363,6 @@ svg cover layer
   -moz-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
-
 .news {
     position: relative;
     font-family: "KelsonSansRegular";
@@ -387,7 +370,6 @@ svg cover layer
     padding-top: 10px;
     /*OpenSansCondensedLight - */
 }
-
 .news_title, .students_title {
     position: relative;
     height: 53px;
@@ -399,11 +381,9 @@ svg cover layer
     color: #444;
     font-family: "KelsonSansRegular";
 }
-
 .students_title {
   margin-bottom: 10px;
 }
-
 .news_title h1 a {
   text-decoration: none;
   color: #444;
@@ -412,20 +392,16 @@ svg cover layer
   margin: auto;
   z-index: 1000;
 }
-
 .arrow_news_title {
   top: -4px;
   font-size: 20px;
 } 
-
 .news_title h1 a:hover {
   color: #0aa06e;
 }
-
 .news_title h1, .students_title h1 {
     font-size: 35px;
 }
-
 .news_title > span, .students_title > span{
     width: 240px;
     height: 3px;
@@ -440,23 +416,19 @@ svg cover layer
 .students_title > span {
   background-color: #3498db;
 }
-
 .block_news {
     min-width: 270px;
     height: 260px;
     padding-top: 20px;
     margin: auto;
 }
-
 .block_news_top {
     position: relative;
     height: 66px;
 }
-
 .block_news_top img {
     float: left;
 }
-
 .block_news_top_day {
     position: absolute;
     left: 12px;
@@ -467,19 +439,16 @@ svg cover layer
     color: #2f423f;
     text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
 }
-
 .block_news_top ul{
     float: left;
     padding: 0 10px 0 10px;
     list-style: none;
     position: relative;
 }
-
 .block_news_top ul li{
     text-transform: uppercase;
     margin: 0;
 }
-
 .block_news_top ul li h4{
     max-width: 190px;
     font-size: 16px;
@@ -500,13 +469,11 @@ svg cover layer
     -ms-hyphens: auto; 
     hyphens: auto; 
 }
-
 .block_news_top_date {
     position: absolute;
     top: 49px;
     font-size: 12px;
 }
-
 .block_news_text {
     margin: 5px 0;
     max-height: 100px;
@@ -517,7 +484,6 @@ svg cover layer
     -ms-hyphens: auto; 
     hyphens: auto;
 }
-
 .block_news_text_tegs {
   font-size: 0.7em;
   color: #0aa06e;
@@ -526,16 +492,13 @@ svg cover layer
   bottom: 52px;
   text-decoration: none;
 }
-
 .block_news_text_tegs a {
   color: #888;
 }
-
 .block_news_text_tegs a:hover {
   text-decoration: none;
   color: #e74c3c;
 }
-
 .block_news_bottom a button {
     position: absolute;
     bottom: 0;
@@ -553,7 +516,6 @@ svg cover layer
         -o-transition: background-color 0.2s;
         transition: background-color 0.2s
 }
-
 .block_news_bottom a button:hover {
     background-color: #0aa06e;
     color: #fff;
@@ -562,11 +524,9 @@ svg cover layer
         -o-transition: background-color 0.2s;
         transition: background-color 0.2s
 }
-
 .block_news_bottom a button span {
     left: 10px;
 }
-
 .students_container {
   text-align: center;
   padding: 15px;
@@ -611,7 +571,6 @@ svg cover layer
 .bg_img_6 {
   background-image: url(../img/img006.jpg);
 }
-
 .grid figure figcaption {
   padding: 2em;
   color: #fff;
@@ -620,7 +579,6 @@ svg cover layer
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
 .grid figure {
   width: 100%;
   background-color: rgba(48, 133, 163, .5);
@@ -630,7 +588,6 @@ svg cover layer
         -o-transition: background-color 0.3s;
         transition: background-color 0.3s
 }
-
 .grid figure:hover {
   background-color: rgba(0, 0, 0, .5);
         -webkit-transition: background-color 0.3s;
@@ -638,12 +595,10 @@ svg cover layer
         -o-transition: background-color 0.3s;
         transition: background-color 0.3s
 }
-
 .grid figure figcaption::before,
 .grid figure figcaption::after {
   pointer-events: none;
 }
-
 .grid figure figcaption,
 .grid figure figcaption > a {
   position: absolute;
@@ -652,7 +607,6 @@ svg cover layer
   width: 100%;
   height: 100%;
 }
-
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
 .grid figure figcaption > a {
@@ -662,31 +616,25 @@ svg cover layer
   font-size: 0;
   opacity: 0;
 }
-
 .grid figure h2 {
   font-weight: 800;
   letter-spacing: 2px;
   font-size: 1.2em;
 }
-
 .grid figure h2,
 .grid figure p {
   margin: 0;
 }
-
 .grid figure p {
   letter-spacing: 1px;
   font-size: 0.8em;
 }
-
 /*---------------*/
 /***** Marley *****/
 /*---------------*/
-
 figure.effect-marley figcaption {
   text-align: right;
 }
-
 figure.effect-marley h2,
 figure.effect-marley p {
   position: absolute;
@@ -694,8 +642,6 @@ figure.effect-marley p {
   left: 20px;
   padding: 10px 0;
 }
-
-
 figure.effect-marley p {
   bottom: 30px;
   line-height: 1.5;
@@ -717,7 +663,6 @@ figure.effect-marley p {
     -ms-hyphens: auto; 
     hyphens: auto; 
 }
-
 figure.effect-marley h2 {
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
@@ -727,12 +672,10 @@ figure.effect-marley h2 {
   line-height: 1.2;
   letter-spacing: 1.5px;
 }
-
 figure.effect-marley:hover h2 {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
-
 figure.effect-marley h2::after {
   position: absolute;
   top: 100%;
@@ -744,14 +687,12 @@ figure.effect-marley h2::after {
   -webkit-transform: translate3d(0,40px,0);
   transform: translate3d(0,40px,0);
 }
-
 figure.effect-marley h2::after,
 figure.effect-marley p {
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
 }
-
 figure.effect-marley:hover h2::after,
 figure.effect-marley:hover p {
   opacity: 1;
