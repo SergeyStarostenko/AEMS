@@ -22,8 +22,8 @@ ____________________ КОНЕЦ ____________________
 */
 
 .header {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* -------------------------------- 
@@ -44,8 +44,7 @@ a {
   text-decoration: none;
 }
 
-.row_new{
-  height: 50px;
+.row {
   width: 100%;
 }
 
@@ -75,9 +74,6 @@ a {
       transition: background-color 0.8s;
 }
 
-.glyphicon {
-  top: -2px;
-}
 
 .navbar-inverse .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a {
@@ -114,9 +110,7 @@ a {
     background-color: rgba(0, 0, 0, .0);
     border: none;
 }
-.navbar {
-    border: none;
-}
+
 .navbar {
     position: relative;
     min-height: 50px;
@@ -215,19 +209,19 @@ Slider
     font-family: "OpenSansCondensedBold";
     position: absolute;
     display: inline-block;
-    background-color: #e74c3c;
     letter-spacing: 1px;
-    color: #ffffff;
+    border: 5px solid #e74c3c;
+    color: #fff;
     text-align: center;
     text-transform: uppercase;
         -webkit-transition: background-color 0.2s;
         -moz-transition: background-color 0.2s;
         -o-transition: background-color 0.2s;
-        transition: background-color 0.2s;
+        transition: background-color 0.2s
 }
 .cd-slider > li .cd-btn:hover {
     text-decoration: none;
-    background-color: #0aa06e;
+    background-color: #e74c3c;
         -webkit-transition: background-color 0.2s;
         -moz-transition: background-color 0.2s;
         -o-transition: background-color 0.2s;
@@ -387,13 +381,19 @@ svg cover layer
 }
 
 .news {
+    position: relative;
     font-family: "KelsonSansRegular";
     margin-bottom: 20px;
     padding-top: 10px;
     /*OpenSansCondensedLight - */
 }
+
 .news_title, .students_title {
-    margin-top: 20px;
+    position: relative;
+    height: 53px;
+    width: 240px;
+    margin: auto;
+    padding-top: 9px;
     text-align: center;
     text-transform: uppercase;
     color: #444;
@@ -407,7 +407,16 @@ svg cover layer
 .news_title h1 a {
   text-decoration: none;
   color: #444;
+  width: 240px;
+  display: block;
+  margin: auto;
+  z-index: 1000;
 }
+
+.arrow_news_title {
+  top: -4px;
+  font-size: 20px;
+} 
 
 .news_title h1 a:hover {
   color: #0aa06e;
@@ -417,7 +426,7 @@ svg cover layer
     font-size: 35px;
 }
 
-.news_title span, .students_title span{
+.news_title > span, .students_title > span{
     width: 240px;
     height: 3px;
     margin: auto;
@@ -425,10 +434,10 @@ svg cover layer
     /*background-color: #c0392b;*/
     display: block;
 }
-.news_title span {
+.news_title > span {
   background-color: #0aa06e;
 }
-.students_title span {
+.students_title > span {
   background-color: #3498db;
 }
 
@@ -535,8 +544,9 @@ svg cover layer
     border: none;
     text-transform: uppercase;
     font-size: 16px;
-    color: #fff;
-    background-color: #0aa06e;
+    color: #444;
+    border: 3px solid #0aa06e;
+    background-color: #fff;
     font-family: "OpenSansCondensedBold";
         -webkit-transition: background-color 0.2s;
         -moz-transition: background-color 0.2s;
@@ -545,7 +555,8 @@ svg cover layer
 }
 
 .block_news_bottom a button:hover {
-    background-color: #e74c3c;
+    background-color: #0aa06e;
+    color: #fff;
         -webkit-transition: background-color 0.2s;
         -moz-transition: background-color 0.2s;
         -o-transition: background-color 0.2s;
@@ -696,6 +707,7 @@ figure.effect-marley h2 {
   transform: translate3d(0,65px,0);
   text-align: center;
   line-height: 1.2;
+  letter-spacing: 1.5px;
 }
 
 figure.effect-marley:hover h2 {
