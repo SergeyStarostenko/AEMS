@@ -1,4 +1,3 @@
-/*____________________ V-2.2 ____________________*/
 
 /*
 ------- классы с цветами для стандартизации -------
@@ -23,8 +22,8 @@ ____________________ КОНЕЦ ____________________
 */
 
 .header {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 /* -------------------------------- 
@@ -34,15 +33,27 @@ Primary style
   box-sizing: border-box;
 }
 
+html {
+}
+
 body {
   background-color: #ffffff;
 }
+
 a {
   text-decoration: none;
 }
-.row {
+
+.news {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.row_new{
+  height: 50px;
   width: 100%;
 }
+
 .nav {
   width: 100%;
   height: 50px;
@@ -60,6 +71,7 @@ a {
       -o-transition: background-color 0.5s;
       transition: background-color 0.5s;
 }
+
 .nav:hover {
   background-color: rgba(0, 0, 0, 1);
       -webkit-transition: background-color 0.8s;
@@ -67,6 +79,8 @@ a {
       -o-transition: background-color 0.8s;
       transition: background-color 0.8s;
 }
+
+
 .navbar-inverse .navbar-nav > li > a,
 .navbar-default .navbar-nav > li > a {
     color: #fff;
@@ -75,6 +89,7 @@ a {
         -o-transition: all 0.5s;
         transition: all 0.5s;
 }
+
 .navbar-inverse .navbar-nav > li:hover,
 .navbar-default .navbar-nav > li:hover{
     background-color: #fff;
@@ -83,6 +98,7 @@ a {
         -o-transition: background-color 0.5s;
         transition: background-color 0.5s;
 }
+
 .navbar-inverse .navbar-nav > li:hover > a,
 .navbar-default .navbar-nav > li:hover > a{
     color: #000;
@@ -91,11 +107,16 @@ a {
         -o-transition: color 0.5s;
         transition: color 0.5s;
 }
+
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     border: none;
 }
+
 .navbar-default {
     background-color: rgba(0, 0, 0, .0);
+    border: none;
+}
+.navbar {
     border: none;
 }
 .navbar {
@@ -104,12 +125,14 @@ a {
     margin-bottom: 20px;
     border: none;
 }
+
 .navbar-inverse .navbar-toggle {
     border: none;
 }
 .navbar-default .navbar-toggle {
     border: none;
 }
+
 .navbar-toggle {
   border-radius: none;
 }
@@ -130,6 +153,7 @@ Slider
   height: 100%;
   width: 100%;
 }
+
 .cd-slider > li {
   position: absolute;
   top: 0;
@@ -364,96 +388,149 @@ svg cover layer
   transition: opacity 0.6s;
 }
 
-.border_left {
+.arrow_hover_left {
   position: absolute;
+  left: -70px;
   float: left;
-  top: 0;
-  left: 0;
-  width: 3px;
-  height: 0;
-  display: block;
-  background-color: #0aa06e;
-   transition: all .3s ease-in-out;
-}
-.border_right {
-  position: absolute;
-  float: right;
-  right: 0;
-  width: 3px;
-  height: 0;
-  display: block;
-  background-color: #0aa06e;
-   transition: all .3s ease-in-out;
-}
-.border_top {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 0;
-  height: 3px;
-  display: block;
-  background-color: #0aa06e;
-   transition: all .3s ease-in-out;
+  width: 50px;
+  height: 260px;
+  z-index: 50;
+          -webkit-transition: left 0.8s;
+        -moz-transition: left 0.8s;
+        -o-transition: left 0.8s;
+        transition: left 0.8s;
+        -webkit-transition-delay: 1s; 
+        transition-delay: 1s
 }
 
-.news:hover .border_right {
+.arrow_news_left {
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
   height: 50px;
-        -webkit-transform: translate(0,-50px);
-        -moz-transform: translate(0,-50px);
-        -o-transform: translate(0,-50px);
-        -ms-transform: translate(0,-50px);
-        transition: all .3s ease-in-out;
+  float: left;
+  top: 50%;
+  margin-top: -25px;
+  border: 3px solid #0aa06e;
+  border-left: none;
+  z-index: 100;
+        -webkit-transition: background-color 0.3s;
+        -moz-transition: background-color 0.3s;
+        -o-transition: background-color 0.3s;
+        transition: background-color 0.3s; 
 }
-.news:hover .border_top {
-  width: 100%;
-        -webkit-transform: translate(-0,0);
-        -moz-transform: translate(-0,0);
-        -o-transform: translate(-0,0);
-        -ms-transform: translate(-0,0);
-        transition: all .3s ease-in-out;
-        /*-webkit-transition-delay: .3s; 
-        transition-delay: .3s;
-        !!ПОСЛЕДОВАТЕЛЬНОСТЬ РАМКИ!!*/
+
+.news:hover .arrow_hover_left{
+  left: 0;
+          -webkit-transition: left 0.8s;
+        -moz-transition: left 0.8s;
+        -o-transition: left 0.8s;
+        transition: left 0.8s  
+        -webkit-transition-delay: 1s; 
 }
-.news:hover .border_left {
+
+.arrow_news_left:hover,
+.arrow_news_right:hover {
+  background-color: #0aa06e;
+        -webkit-transition: background-color 0.3s;
+        -moz-transition: background-color 0.3s;
+        -o-transition: background-color 0.3s;
+        transition: background-color 0.3s;  
+}
+
+.arrow_news_left:hover span,
+.arrow_news_right:hover span {
+  color: #fff;
+        -webkit-transition: color 0.3s;
+        -moz-transition: color 0.3s;
+        -o-transition: color 0.3s;
+        transition: color 0.3s; }
+
+.arrow_news_left span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 16px;
+  margin-top: -8px;
+  margin-left: -8px;
+  color: #444;
+}
+
+.arrow_hover_right {
+  position: absolute;
+  cursor: pointer;
+  right: -70px;
+  float: right;
+  width: 50px;
+  height: 260px;
+  z-index: 50;
+          -webkit-transition: right 0.8s;
+        -moz-transition: right 0.8s;
+        -o-transition: right 0.8s;
+        transition: right 0.8s;
+        -webkit-transition-delay: 1s; 
+        transition-delay: 1s
+}
+
+.arrow_news_right {
+  position: absolute;
+  cursor: pointer;
+  width: 50px;
   height: 50px;
-        -webkit-transform: translate(0,0);
-        -moz-transform: translate(0,0);
-        -o-transform: translate(0,0);
-        -ms-transform: translate(0,0);
-        transition: all .5s ease-in-out;
-        /*-webkit-transition-delay: .6s; 
-        transition-delay: .6s;
-        !!ПОСЛЕДОВАТЕЛЬНОСТЬ РАМКИ!!*/
+  float: right;
+  top: 50%;
+  margin-top: -25px;
+  border: 3px solid #0aa06e;
+  border-right: none;
+  z-index: 100;
+        -webkit-transition: background-color 0.3s;
+        -moz-transition: background-color 0.3s;
+        -o-transition: background-color 0.3s;
+        transition: background-color 0.3s; 
 }
+
+.news:hover .arrow_hover_right {
+  right: 0;
+          -webkit-transition: right 0.8s;
+        -moz-transition: right 0.8s;
+        -o-transition: right 0.8s;
+        transition: right 0.8s  
+}
+
+
+.arrow_news_right span {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  font-size: 16px;
+  margin-top: -8px;
+  margin-right: -8px;
+  color: #444;
+}
+
 .news {
+    overflow: hidden;
     position: relative;
     font-family: "KelsonSansRegular";
     margin-bottom: 20px;
     padding-top: 10px;
     /*OpenSansCondensedLight - */
 }
+
 .news_title, .students_title {
     position: relative;
+    height: 53px;
     width: 240px;
     margin: auto;
     padding-top: 9px;
     text-align: center;
     text-transform: uppercase;
+    color: #444;
     font-family: "KelsonSansRegular";
-        transition: all .5s ease-in-out;
-}
-.students_title {
-  margin-bottom: 10px;
 }
 
-.news_title:hover {
-    background-color: #0aa06e;
-        transition: all .5s ease-in-out;
-}
-.news_title:hover h1 a {
-    color: #fff;
-        transition: all .5s ease-in-out;
+.students_title {
+  margin-bottom: 10px;
 }
 
 .news_title h1 a {
@@ -462,21 +539,26 @@ svg cover layer
   width: 240px;
   display: block;
   margin: auto;
-      transition: all .5s ease-in-out;
+  z-index: 1000;
 }
+
 .arrow_news_title {
-  top: -4px;
-  font-size: 20px;
+  font-size: 30px;
 } 
+
+.news_title h1 a:hover {
+  color: #0aa06e;
+}
 
 .news_title h1, .students_title h1 {
     font-size: 35px;
-    padding-bottom: 3px;
 }
+
 .news_title > span, .students_title > span{
     width: 240px;
     height: 3px;
     margin: auto;
+    margin-top: 5px;
     /*background-color: #c0392b;*/
     display: block;
 }
@@ -485,21 +567,24 @@ svg cover layer
 }
 .students_title > span {
   background-color: #3498db;
-  margin-top: 5px;
 }
+
 .block_news {
     min-width: 270px;
     height: 260px;
     padding-top: 20px;
     margin: auto;
 }
+
 .block_news_top {
     position: relative;
     height: 66px;
 }
+
 .block_news_top img {
     float: left;
 }
+
 .block_news_top_day {
     position: absolute;
     left: 12px;
@@ -510,16 +595,19 @@ svg cover layer
     color: #2f423f;
     text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
 }
+
 .block_news_top ul{
     float: left;
     padding: 0 10px 0 10px;
     list-style: none;
     position: relative;
 }
+
 .block_news_top ul li{
     text-transform: uppercase;
     margin: 0;
 }
+
 .block_news_top ul li h4{
     max-width: 190px;
     font-size: 16px;
@@ -540,11 +628,13 @@ svg cover layer
     -ms-hyphens: auto; 
     hyphens: auto; 
 }
+
 .block_news_top_date {
     position: absolute;
     top: 49px;
     font-size: 12px;
 }
+
 .block_news_text {
     margin: 5px 0;
     max-height: 100px;
@@ -555,6 +645,7 @@ svg cover layer
     -ms-hyphens: auto; 
     hyphens: auto;
 }
+
 .block_news_text_tegs {
   font-size: 0.7em;
   color: #0aa06e;
@@ -563,13 +654,16 @@ svg cover layer
   bottom: 52px;
   text-decoration: none;
 }
+
 .block_news_text_tegs a {
   color: #888;
 }
+
 .block_news_text_tegs a:hover {
   text-decoration: none;
   color: #e74c3c;
 }
+
 .block_news_bottom a button {
     position: absolute;
     bottom: 0;
@@ -587,6 +681,7 @@ svg cover layer
         -o-transition: background-color 0.2s;
         transition: background-color 0.2s
 }
+
 .block_news_bottom a button:hover {
     background-color: #0aa06e;
     color: #fff;
@@ -595,9 +690,11 @@ svg cover layer
         -o-transition: background-color 0.2s;
         transition: background-color 0.2s
 }
+
 .block_news_bottom a button span {
     left: 10px;
 }
+
 .students_container {
   text-align: center;
   padding: 15px;
@@ -631,17 +728,18 @@ svg cover layer
   background-image: url(../img/img002.jpg);
 }
 .bg_img_3 {
-  background-image: url(../img/img003.jpg);
+  background-image: url(../img/img005.jpg);
 }
 .bg_img_4 {
   background-image: url(../img/img004.jpg);
 }
 .bg_img_5 {
-  background-image: url(../img/img005.jpg);
+  background-image: url(../img/img001.jpg);
 }
 .bg_img_6 {
-  background-image: url(../img/img006.jpg);
+  background-image: url(../img/img002.jpg);
 }
+
 .grid figure figcaption {
   padding: 2em;
   color: #fff;
@@ -650,26 +748,12 @@ svg cover layer
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-.grid figure {
-  width: 100%;
-  background-color: rgba(48, 133, 163, .5);
-  /*background-color: rgba(48, 133, 163, .5); - наложение затемняющего фона поверх картинки*/
-        -webkit-transition: background-color 0.3s;
-        -moz-transition: background-color 0.3s;
-        -o-transition: background-color 0.3s;
-        transition: background-color 0.3s
-}
-.grid figure:hover {
-  background-color: rgba(0, 0, 0, .5);
-        -webkit-transition: background-color 0.3s;
-        -moz-transition: background-color 0.3s;
-        -o-transition: background-color 0.3s;
-        transition: background-color 0.3s
-}
+
 .grid figure figcaption::before,
 .grid figure figcaption::after {
   pointer-events: none;
 }
+
 .grid figure figcaption,
 .grid figure figcaption > a {
   position: absolute;
@@ -678,6 +762,7 @@ svg cover layer
   width: 100%;
   height: 100%;
 }
+
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
 .grid figure figcaption > a {
@@ -687,25 +772,31 @@ svg cover layer
   font-size: 0;
   opacity: 0;
 }
+
 .grid figure h2 {
   font-weight: 800;
   letter-spacing: 2px;
   font-size: 1.2em;
 }
+
 .grid figure h2,
 .grid figure p {
   margin: 0;
 }
+
 .grid figure p {
   letter-spacing: 1px;
   font-size: 0.8em;
 }
+
 /*---------------*/
 /***** Marley *****/
 /*---------------*/
+
 figure.effect-marley figcaption {
   text-align: right;
 }
+
 figure.effect-marley h2,
 figure.effect-marley p {
   position: absolute;
@@ -713,6 +804,8 @@ figure.effect-marley p {
   left: 20px;
   padding: 10px 0;
 }
+
+
 figure.effect-marley p {
   bottom: 30px;
   line-height: 1.5;
@@ -734,6 +827,7 @@ figure.effect-marley p {
     -ms-hyphens: auto; 
     hyphens: auto; 
 }
+
 figure.effect-marley h2 {
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
@@ -743,10 +837,12 @@ figure.effect-marley h2 {
   line-height: 1.2;
   letter-spacing: 1.5px;
 }
+
 figure.effect-marley:hover h2 {
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
+
 figure.effect-marley h2::after {
   position: absolute;
   top: 100%;
@@ -758,12 +854,14 @@ figure.effect-marley h2::after {
   -webkit-transform: translate3d(0,40px,0);
   transform: translate3d(0,40px,0);
 }
+
 figure.effect-marley h2::after,
 figure.effect-marley p {
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
 }
+
 figure.effect-marley:hover h2::after,
 figure.effect-marley:hover p {
   opacity: 1;
