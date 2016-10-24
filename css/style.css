@@ -695,6 +695,7 @@ svg cover layer
     left: 10px;
 }
 
+
 .students_container {
   text-align: center;
   padding: 15px;
@@ -747,6 +748,24 @@ svg cover layer
   font-size: 1.25em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+.grid figure {
+  width: 100%;
+  background-color: rgba(48, 133, 163, .5);
+  /*background-color: rgba(48, 133, 163, .5); - наложение затемняющего фона поверх картинки*/
+        -webkit-transition: background-color 0.3s;
+        -moz-transition: background-color 0.3s;
+        -o-transition: background-color 0.3s;
+        transition: background-color 0.3s
+}
+
+.grid figure:hover {
+  background-color: rgba(0, 0, 0, .5);
+        -webkit-transition: background-color 0.3s;
+        -moz-transition: background-color 0.3s;
+        -o-transition: background-color 0.3s;
+        transition: background-color 0.3s
 }
 
 .grid figure figcaption::before,
