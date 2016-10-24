@@ -363,6 +363,69 @@ svg cover layer
   -moz-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
+
+.border_left {
+  position: absolute;
+  float: left;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 0;
+  display: block;
+  background-color: #0aa06e;
+   transition: all .3s ease-in-out;
+}
+.border_right {
+  position: absolute;
+  float: right;
+  right: 0;
+  width: 3px;
+  height: 0;
+  display: block;
+  background-color: #0aa06e;
+   transition: all .3s ease-in-out;
+}
+.border_top {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 3px;
+  display: block;
+  background-color: #0aa06e;
+   transition: all .3s ease-in-out;
+}
+
+.news:hover .border_right {
+  height: 50px;
+        -webkit-transform: translate(0,-50px);
+        -moz-transform: translate(0,-50px);
+        -o-transform: translate(0,-50px);
+        -ms-transform: translate(0,-50px);
+        transition: all .3s ease-in-out;
+}
+.news:hover .border_top {
+  width: 100%;
+        -webkit-transform: translate(-0,0);
+        -moz-transform: translate(-0,0);
+        -o-transform: translate(-0,0);
+        -ms-transform: translate(-0,0);
+        transition: all .3s ease-in-out;
+        /*-webkit-transition-delay: .3s; 
+        transition-delay: .3s;
+        !!ПОСЛЕДОВАТЕЛЬНОСТЬ РАМКИ!!*/
+}
+.news:hover .border_left {
+  height: 50px;
+        -webkit-transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -o-transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        transition: all .5s ease-in-out;
+        /*-webkit-transition-delay: .6s; 
+        transition-delay: .6s;
+        !!ПОСЛЕДОВАТЕЛЬНОСТЬ РАМКИ!!*/
+}
 .news {
     position: relative;
     font-family: "KelsonSansRegular";
@@ -372,41 +435,48 @@ svg cover layer
 }
 .news_title, .students_title {
     position: relative;
-    height: 53px;
     width: 240px;
     margin: auto;
     padding-top: 9px;
     text-align: center;
     text-transform: uppercase;
-    color: #444;
     font-family: "KelsonSansRegular";
+        transition: all .5s ease-in-out;
 }
 .students_title {
   margin-bottom: 10px;
 }
+
+.news_title:hover {
+    background-color: #0aa06e;
+        transition: all .5s ease-in-out;
+}
+.news_title:hover h1 a {
+    color: #fff;
+        transition: all .5s ease-in-out;
+}
+
 .news_title h1 a {
   text-decoration: none;
   color: #444;
   width: 240px;
   display: block;
   margin: auto;
-  z-index: 1000;
+      transition: all .5s ease-in-out;
 }
 .arrow_news_title {
   top: -4px;
   font-size: 20px;
 } 
-.news_title h1 a:hover {
-  color: #0aa06e;
-}
+
 .news_title h1, .students_title h1 {
     font-size: 35px;
+    padding-bottom: 3px;
 }
 .news_title > span, .students_title > span{
     width: 240px;
     height: 3px;
     margin: auto;
-    margin-top: 5px;
     /*background-color: #c0392b;*/
     display: block;
 }
@@ -415,6 +485,7 @@ svg cover layer
 }
 .students_title > span {
   background-color: #3498db;
+  margin-top: 5px;
 }
 .block_news {
     min-width: 270px;
