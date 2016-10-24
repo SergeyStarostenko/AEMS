@@ -363,7 +363,7 @@ svg cover layer
   -moz-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
-
+/*НАЧАЛО ЗАГОЛОВКА БЛОКА НОВОСТИ В ВИДЕ КНОПКИ С ЭФФЕКТОМ РАМКИ*/
 .border_left {
   position: absolute;
   float: left;
@@ -426,6 +426,7 @@ svg cover layer
         transition-delay: .6s;
         !!ПОСЛЕДОВАТЕЛЬНОСТЬ РАМКИ!!*/
 }
+/*КОНЕЦ ЗАГОЛОВКА БЛОКА НОВОСТИ В ВИДЕ КНОПКИ С ЭФФЕКТОМ РАМКИ*/
 .news {
     position: relative;
     font-family: "KelsonSansRegular";
